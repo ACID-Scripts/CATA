@@ -29624,8 +29624,7 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 
 -- Define ACID Full Release Script Creature Entries
 -- ================================================
-UPDATE creature_template SET AIName='EventAI' WHERE entry IN (62,99,913,927,951,6846,10445,14841,14844,14845,14847,23619,23623,23624,23625,23626,23830,42937,42940,44548,44564,46983,49869,49874,50039,50047,50378,50526,50527,50528,54485,54518,54605,55088,55089,55093,55229,55230,55231,55220,55221,55222,55223,55225,55226,55266,55307,55341,55342,56035,58570);
--- UPDATE creature_template SET AIName='EventAI' WHERE entry IN ();
+UPDATE creature_template INNER JOIN creature_ai_scripts ON creature_template.entry = creature_ai_scripts.creature_id SET AIName='EventAI';
 
 
 

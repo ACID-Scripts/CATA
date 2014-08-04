@@ -1,8 +1,8 @@
--- ================================================================================
--- ====     ACID RELEASE 4.0.0 - FULL RELEASE FOR CMANGOS-CATA (4.3.4 CLIENT)  ====
--- ================================================================================
+-- ========================================================
+-- ====     ACID CATA FOR CMANGOS-CATA (4.3.4 CLIENT)  ====
+-- ========================================================
 
-/* Copyright (C) 2008 - 2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+/* Copyright (C) 2008 - 2014 ACID <http://www.cmangos.net>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -28,11 +28,10 @@ TRUNCATE creature_ai_summons;
 TRUNCATE creature_ai_texts;
 
 
-
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 4.3.4 \'ALPHA DEVELOPMENT\' - Full Release for CMaNGOS-CATA (4.3.4 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 4.3.4 (Cataclysm) for CMaNGOS-CATA (4.3.4 Client)';
 
 
 
